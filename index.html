@@ -12,28 +12,31 @@
 </head>
 <body>
     <main class="py-8">
-        <h1 id="header-name" class="text-3xl font-bold text-center mb-8">Money Master</h1>
+        <h1 class="text-sky-700 text-3xl font-bold text-center mb-8">Money Master</h1>
         <section class="md:flex justify-content-center content-around">
             <div>
                 <img  src="picture/dollar-1.jpeg" alt="">
             </div>
             <div class="bg-slate-100 rounded p-8 md:mr-5">
+                    <p style="color: red; text-align: center; margin: 10px 0px;">*Income must exceed expenses</p>
                     <!-- income -->
                     <h4 class="font-bold text-center">Income</h4>
-                    <h4 class="my-4">Income: <input id="income-input" class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
+                    <h4 class="my-4">Income: <input placeholder="give positive number" id="income-input" class="border-1 bg-gray-200 w-2/3 rounded" type="number"></h4>
                     <!-- expenses -->
 
                     <h4 class="font-bold text-center">Expenses</h4>
-                    <h4 class="my-4">Food: <input id="food-input" class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
-                    <h4 class="my-4">Rent: <input id="rent-input" class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
-                    <h4 class="my-4">Cloth: <input id="cloth-input" class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
+                    <h4 class="my-4">Food: <input placeholder="give 0 or positive number" id="food-input" class="border-1 bg-gray-200 w-2/3 rounded" type="number"></h4>
+                    <h4 class="my-4">Rent: <input placeholder="give 0 or positive number" id="rent-input" class="border-1 bg-gray-200 w-2/3 rounded" type="number"></h4>
+                    <h4 class="my-4">Cloth: <input placeholder="give 0 or positive number" id="cloth-input" class="border-1 bg-gray-200 w-2/3 rounded" type="number"></h4>
 
                     <button onclick="calculate()" class="bg-sky-700 px-5 py-1 px-8 rounded text-white my-2 flex m-auto">Calculate</button>
+
+                    <p class="paragraph"></p>
 
                     <h4 class="my-3 font-bold text-center">Total Expenses: <span id="total-expenses">0</span></h4>
                     <h4 class="my-3 font-bold text-center">Balance: <span id="balance-amount">0</span></h4>
                     <!-- save -->
-                    <h4>Save: <input id="save-input" class="w-1/4 bg-gray-300 rounded" type="text"><span class="mx-8">%</span><button onclick="save()" class="bg-sky-700 px-3 py-1 rounded text-white my-2">Save</button></h4>
+                    <h4>Save: <input placeholder="give positive" id="save-input" class="w-1/4 bg-gray-200 rounded" type="number"><span class="mx-8">%</span><button onclick="save()" class="bg-sky-700 px-3 py-1 rounded text-white my-2">Save</button></h4>
 
                     <h4 class="my-3 font-bold text-center">Saving Balance: <span id="saving-balance">0</span></h4>
                     <h4 class="font-bold text-center">Remaining Amount: <span id="remaining-amount">0</span></h4>
