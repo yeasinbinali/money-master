@@ -18,22 +18,25 @@
                 <img  src="picture/dollar-1.jpeg" alt="">
             </div>
             <div class="bg-slate-100 rounded p-8 md:mr-5">
-                <form action="">
                     <!-- income -->
                     <h4 class="font-bold text-center">Income</h4>
-                    <h4 class="my-4">Income: <input class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
+                    <h4 class="my-4">Income: <input id="income-input" class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
                     <!-- expenses -->
+
                     <h4 class="font-bold text-center">Expenses</h4>
-                    <h4 class="my-4">Food: <input class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
-                    <h4 class="my-4">Rent: <input class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
-                    <h4 class="my-4">Cloth: <input class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
-                    <button class="bg-sky-700 px-5 py-1 px-8 rounded text-white my-2 flex m-auto">Calculate</button>
-                    <h4 class="my-3 font-bold text-center">Total Expenses: 0</h4>
-                    <h4 class="my-3 font-bold text-center">Balance: 0</h4>
-                    <h4>Save: <input class="w-1/4 bg-gray-300 rounded" type="text"><span class="mx-8">%</span><button class="bg-sky-700 px-3 py-1 rounded text-white my-2">Save</button></h4>
-                    <h4 class="my-3 font-bold text-center">Saving Balance: 0</h4>
-                    <h4 class="font-bold text-center">Remaining Amount: 0</h4>
-                </form>
+                    <h4 class="my-4">Food: <input id="food-input" class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
+                    <h4 class="my-4">Rent: <input id="rent-input" class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
+                    <h4 class="my-4">Cloth: <input id="cloth-input" class="border-1 bg-gray-300 w-2/3 rounded" type="text"></h4>
+
+                    <button onclick="calculate()" class="bg-sky-700 px-5 py-1 px-8 rounded text-white my-2 flex m-auto">Calculate</button>
+
+                    <h4 class="my-3 font-bold text-center">Total Expenses: <span id="total-expenses">0</span></h4>
+                    <h4 class="my-3 font-bold text-center">Balance: <span id="balance-amount">0</span></h4>
+                    <!-- save -->
+                    <h4>Save: <input id="save-input" class="w-1/4 bg-gray-300 rounded" type="text"><span class="mx-8">%</span><button onclick="save()" class="bg-sky-700 px-3 py-1 rounded text-white my-2">Save</button></h4>
+
+                    <h4 class="my-3 font-bold text-center">Saving Balance: <span id="saving-balance">0</span></h4>
+                    <h4 class="font-bold text-center">Remaining Amount: <span id="remaining-amount">0</span></h4>
             </div>
         </section>
     </main>
