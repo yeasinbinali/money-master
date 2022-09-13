@@ -16,7 +16,7 @@ function calculate(){
     const incomeValue = incomeInput.value;
     const incomeAmount = parseInt(incomeValue);
 
-    if(incomeAmount > expensesAmount && incomeAmount > 0 && foodAmount >=0 && rentAmount >= 0 && clothAmount >= 0){
+    if(incomeAmount >= expensesAmount && incomeAmount > 0 && foodAmount >=0 && rentAmount >= 0 && clothAmount >= 0){
         const totalExpenses = document.getElementById('total-expenses');
         totalExpenses.innerText = expensesAmount;
 
